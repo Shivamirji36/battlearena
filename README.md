@@ -57,7 +57,9 @@ Enemy Health: 85
 
 Enemy deals 10 damage to Hero
 Hero Health: 110
+<br>
 .
 .
 .
+<br>
 Warrior Win!!

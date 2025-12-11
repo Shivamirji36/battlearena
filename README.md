@@ -63,3 +63,17 @@ Hero Health: 110
 .
 <br>
 Warrior Win!!
+
+**🚀 Possible Improvements**
+
+Add multiple enemy types (Orc, Dragon, Skeleton)
+
+Add hero abilities (Fireball, Shield Block, Critical Hit)
+
+Add inventory & potions
+
+Add menu UI + enhanced prompts
+
+Add random damage variation
+
+Add experience & leveling system

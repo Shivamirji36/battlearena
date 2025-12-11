@@ -42,7 +42,7 @@ Double KO (both die same turn)
 
 **▶️ Running the Game**
 
-Enter the Character: warrior
+````Enter the Character: warrior
 
 Character: Warrior
 Health: 120
@@ -62,7 +62,7 @@ Hero Health: 110
 .
 .
 <br>
-Warrior Win!!
+Warrior Win!! ```
 
 **🚀 Possible Improvements**
 
@@ -77,3 +77,4 @@ Add menu UI + enhanced prompts
 Add random damage variation
 
 Add experience & leveling system
+````

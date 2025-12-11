@@ -4,7 +4,7 @@ A simple turn-based battle game built in Java to practice OOP concepts like Abst
 
 The player selects a hero class — Warrior, Mage, or Archer — and battles an enemy Goblin until one of them falls.
 
-<b>🎮 Game Overview<b>
+**🎮 Game Overview**
 
 Choose a hero:
 
@@ -31,3 +31,33 @@ Hero wins
 Enemy wins
 
 Double KO (both die same turn)
+
+**🧠 OOP Concepts Used**
+
+-> Abstraction
+-> Inheritance
+-> Constructors
+-> Encapsulation
+-> Polymorphism (basic)
+
+**▶️ Running the Game**
+
+Enter the Character: warrior
+
+Character: Warrior
+Health: 120
+Attack power: 15
+
+Character: Goblin
+Health: 100
+Attack power: 10
+
+Warrior deals 15 damage to Enemy
+Enemy Health: 85
+
+Enemy deals 10 damage to Hero
+Hero Health: 110
+.
+.
+.
+Warrior Win!!

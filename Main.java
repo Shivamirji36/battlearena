@@ -58,7 +58,7 @@ class Warrior extends Character {
         return attackPower;
     }
     
-    public String getType(String name) {
+    public String getType() {
         return "Warrior";
     }
 }
@@ -72,7 +72,7 @@ class Mage extends Character {
         return attackPower;
     }
 
-    public String getType(String name) {
+    public String getType() {
         return "Mage";
     }
 }
@@ -86,7 +86,21 @@ class Archer extends Character {
         return attackPower;
     }
 
-    public String getType(String name) {
+    public String getType() {
         return "Archer";
+    }
+}
+
+class Enemy extends Character {
+    Enemy(String name) {
+        super(name, 100, 10);
+    }
+
+    public int attack() {
+        return attackPower;
+    }
+
+    public String getType() {
+        return "Enemy";
     }
 }

@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -31,8 +32,7 @@ public class Main {
                 if (hero.health <= 0 && enemy.health <= 0) {
                     winner = "Double KO";
                     break;
-                }
-                else if (hero.health <= 0) {
+                } else if (hero.health <= 0) {
                     winner = "Enemy";
                     break;
                 } else if (enemy.health <= 0) {
@@ -43,16 +43,13 @@ public class Main {
             }
             if (winner.equals("Enemy")) {
                 System.out.println("Enemy Wins!!");
-            }
-            else if (winner.equals("Hero")) {
+            } else if (winner.equals("Hero")) {
                 System.out.println("Warrior Win!!");
-            }
-            else {
+            } else {
                 System.out.println("Double KO");
             }
-            
-        }
-        else if (name.equalsIgnoreCase("mage")) {
+
+        } else if (name.equalsIgnoreCase("mage")) {
             Mage hero = new Mage("Mage");
             Enemy enemy = new Enemy("Goblin");
 
@@ -85,16 +82,13 @@ public class Main {
             }
             if (winner.equals("Hero")) {
                 System.out.println("Mage Win!!");
-            }
-            else if (winner.equals("Enemy")) {
+            } else if (winner.equals("Enemy")) {
                 System.out.println("Enemy Win!!");
-            }
-            else {
+            } else {
                 System.out.println("Double KO");
             }
 
-        }
-        else if (name.equalsIgnoreCase("archer")) {
+        } else if (name.equalsIgnoreCase("archer")) {
             Archer hero = new Archer("Archer");
             Enemy enemy = new Enemy("Goblin");
 
@@ -134,7 +128,7 @@ public class Main {
             }
 
         }
-  }
+    }
 }
 
 abstract class Character {
@@ -142,7 +136,7 @@ abstract class Character {
     protected int health;
     protected int attackPower;
 
-    Character(String name, int health, int attackPower){
+    Character(String name, int health, int attackPower) {
         this.name = name;
         this.health = health;
         this.attackPower = attackPower;
@@ -150,7 +144,7 @@ abstract class Character {
 
     abstract int attack();
 
-    //This method takes the damage from enemy or hero
+    // This method takes the damage from enemy or hero
     public void takeDamage(int damage) {
         health = health - damage;
         if (health < 0) {
@@ -158,18 +152,17 @@ abstract class Character {
         }
     }
 
-    //This method checks whether the Hero or Enemy is alive
-    public boolean isAlive(){
-        if(health > 0){
+    // This method checks whether the Hero or Enemy is alive
+    public boolean isAlive() {
+        if (health > 0) {
             return true;
-        }
-        else{
+        } else {
             return false;
         }
     }
 
-    //This method shows the Stats of Enemy or Hero
-    public void showStats(){
+    // This method shows the Stats of Enemy or Hero
+    public void showStats() {
         System.out.println("Character: " + name);
         System.out.println("Health: " + health);
         System.out.println("Attack power: " + attackPower);
@@ -184,7 +177,7 @@ class Warrior extends Character {
     int attack() {
         return attackPower;
     }
-    
+
     public String getType() {
         return "Warrior";
     }
